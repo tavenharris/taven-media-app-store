@@ -4,7 +4,7 @@ name: Cleanuparr
 tagline: Clean up unlinked downloads from your media stack
 icon: https://github.com/Cleanuparr/Cleanuparr/raw/main/docs/static/img/logo.svg
 category: Utilities
-version: "2.3.0"
+version: "2.3.1"
 port: 11011
 description: >-
   Cleanuparr manages orphaned downloads for Sonarr and Radarr. It is installed
@@ -16,7 +16,7 @@ repo: https://github.com/Cleanuparr/Cleanuparr
 support: https://github.com/Cleanuparr/Cleanuparr/issues
 gallery: []
 releaseNotes: >-
-  Initial Umbrel package with shared-downloads access and native Umbrel networking.
+  Fix Cleanuparr container startup permissions for Umbrel.
 dependencies: []
 path: ""
 defaultUsername: ""
