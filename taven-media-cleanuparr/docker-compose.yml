@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: taven-media-cleanuparr_server_1
+      APP_PORT: 11011
+
+  server:
+    image: ghcr.io/cleanuparr/cleanuparr:latest
+    user: "1000:1000"
+    init: true
+    restart: unless-stopped
+    environment:
+      PORT: 11011
+      TZ: America/Los_Angeles
+      PUID: 1000
+      PGID: 1000
+      UMASK: "022"
+    volumes:
+      - ${APP_DATA_DIR}/data:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
