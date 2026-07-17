@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: taven-media-cleanuparr
+name: Cleanuparr
+tagline: Clean up unlinked downloads from your media stack
+icon: https://github.com/Cleanuparr/Cleanuparr/raw/main/docs/static/img/logo.svg
+category: Utilities
+version: "2.3.0"
+port: 11011
+description: >-
+  Cleanuparr manages orphaned downloads for Sonarr and Radarr. It is installed
+  with access to Umbrel's shared Downloads folder, so it can identify and remove
+  download data after the matching media has been deleted.
+developer: Cleanuparr
+website: https://cleanuparr.github.io/Cleanuparr/
+repo: https://github.com/Cleanuparr/Cleanuparr
+support: https://github.com/Cleanuparr/Cleanuparr/issues
+gallery: []
+releaseNotes: >-
+  Initial Umbrel package with shared-downloads access and native Umbrel networking.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+permissions:
+  - STORAGE_DOWNLOADS
